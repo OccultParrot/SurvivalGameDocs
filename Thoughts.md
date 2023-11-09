@@ -20,4 +20,5 @@ In the early game, you can use your hands to dig holes in loam, Though if you wa
 
 - ## World Generation
   A goal of mine is to have the world have randomly generated terrain. I want rivers to look like actual rivers and to be flowing, so that we can use water to push things. I will look into world generation then update this block once I have a formula.
-  I have written an example file in the file [worldGen.txt](worldGen.txt)
+  
+  I have written an example file in the file [worldGen.txt](worldGen.txt). It uses Light Noise to decide information such as temperature, altitude, and moisture.
