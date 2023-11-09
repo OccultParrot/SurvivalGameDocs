@@ -9,3 +9,7 @@ As of right now I don't have much in the game, because I am working on some basi
 ## Thoughts on Monetising the Game
 
 I don't have any plans on monetising the game right now. I plan on the game being free, because I am writting it for fun and don't really care if I am making money off it.
+
+## Game Engine
+
+Currently the game is being developed on Godot, which I am new to. I was going to use Unity, but recenty I have heard about some stuff that Unity has been doing with its Terms of Service that I am not a fan of so I chose Godot which a lot of other developers have chosen too.
