@@ -13,9 +13,10 @@ By knapping the shards off the workpiece you can refine the shape till you reach
 
 - ## Digging, and All That Entails
 In the early game, you can use your hands to dig holes in loam, Though if you want to dig a hole in something that is harder, you will need to break it up with a hoe or a stick. A hole can be used for many things, such as pit kilns, charcoal pits, burying seeds to grow new plants, etc. There is a lot of things you can do with a hole.
-  + ### Pit Kiln
+
+  - ### Pit Kiln
     A pit kiln can be used to fire pottery that you have made.
-  + ### Charcoal Pit
+  - ### Charcoal Pit
     A charcoal pit is a way to make charcoal. It is much more effecient than just burning campfires. To make one, dig a hole and place logs and sticks into it. Next, light the wood on fire and then cover it with the dirt you dug.
 
 - ## World Generation
