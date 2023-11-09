@@ -5,20 +5,24 @@
 
 extends TileMap
 
+# The Light Noise used to determine information about the tile.
 var moisture = FastLightNoise = new()
 var temperature = FastLightNoise = new()
 var altitude = FastLightNoise = new()
 
+# The width and height of each chunk generated.
 var width = 16
 var height = 16
 
 
 func _ready():
+  # Setting the seed of each noise to a random number
   moisture.seed = randi()
   temperature.seed = randi()
   altitude.seed = randi()
 
 func _process(delta):
+  # When the map is processed, you generate the chunk the player is in.
   generate_chunk(position)
 
 func generate_chunk(position):
