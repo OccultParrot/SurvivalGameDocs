@@ -4,7 +4,7 @@ The idea for the project is an extremely indepth survival game, in a 2D point of
 
 ## Features
 
-As of right now I don't have much in the game, because I am working on some basic world generation right now. I have been writting ideas for game mechanics in my ["Thoughts"](Thoughts.md) file, so if you are intrested you can check that file out.
+As of right now I don't have much in the game, because I am working on some basic world generation right now. I have been writting ideas for game mechanics in my ["Thoughts"](Documentation/Game-Mechanics.md) file, so if you are intrested you can check that file out.
 
 ## Thoughts on Monetising the Game
 
