@@ -23,3 +23,5 @@ In the early game, you can use your hands to dig holes in loam, Though if you wa
   A goal of mine is to have the world have randomly generated terrain. I want rivers to look like actual rivers and to be flowing, so that we can use water to push things. I will look into world generation then update this block once I have a formula.
   
   I have written an example file in the file [worldGen.txt](worldGen.txt). It uses Light Noise to decide information such as temperature, altitude, and moisture.
+
+  I am not a huge fan of the basic procedural generation I have written because it isn't realistic. My new plan to use Perlin noise to define continents useing the pixel values as a hight map. Then I will use another noise map to define rainfall, and then get the latitude of each cell by getting the absolute value of the y coordinate. Along with that I will use another noise map to define the subrate and strata. Using this data I can generate cells in a realistic way. Adding water such as rivers and lakes will be a problem for the future. I think I will use the elevation to define points where water would flow.
