@@ -1,6 +1,6 @@
 # Story Ideas
 I think the games story should be divided into mulitple sections or, "Chapters"
-Through the Chapters, the players will have more technology unlocked. One example of this is when the player finds a village, the player will now have the ability to make things like Querns and to produce things like pine tar.
+Through the Chapters, the players will have more technology unlocked. One example of this is when the player finds a village, the player will now have the ability to make things like Mortar and Pestles and to produce things like pine tar.
 
 The game will notify the players when a new chapter has been reached. Each chapter will have more quests for the player, from new and old NPCs.
 
