@@ -5,8 +5,11 @@ Through the Chapters, the players will have more technology unlocked. One exampl
 ## Basic order of Chapters
 - Player runs from buring village
 - Player wakes up in the middle of the wilderness and is hungry
+
 This is the start of the tutorial. This will give access to basic unknapped hand axe, and other EXTREMELY basic tools, items, and structures.
+
 - Player finds the spirits home.
+
 This is the end of the tutorial, and gives access to knapping, fibers, and basic rope
 
 More will be added soon...
