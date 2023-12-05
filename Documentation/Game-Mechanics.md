@@ -25,3 +25,14 @@ In the early game, you can use your hands to dig holes in loam, Though if you wa
   I have written an example file in the file [worldGen.txt](worldGen.txt). It uses Light Noise to decide information such as temperature, altitude, and moisture.
 
   I am not a huge fan of the basic procedural generation I have written because it isn't realistic. My new plan to use Perlin noise to define continents useing the pixel values as a hight map. Then I will use another noise map to define rainfall, and then get the latitude of each cell by getting the absolute value of the y coordinate. Along with that I will use another noise map to define the subrate and strata. Using this data I can generate cells in a realistic way. Adding water such as rivers and lakes will be a problem for the future. I think I will use the elevation to define points where water would flow.
+
+- ## Inventory System
+  The player and all containers have a simaler inventory system. The inventory is a grid, upon which items can be placed. Some items take up multiple grid spaces, whil others just take one. Items will be able to stack in the inventory without taking extra space, but they all have different maximum stack sizes.
+
+  Example of how the inventory node is written (Unfinished):
+
+```gdscript
+@export var inv_width : int = 5
+@export var inv_height : int = 5
+var inv_array : Array = []
+```
