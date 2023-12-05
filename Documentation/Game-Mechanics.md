@@ -19,12 +19,14 @@ In the early game, you can use your hands to dig holes in loam, Though if you wa
   - ### Charcoal Pit
     A charcoal pit is a way to make charcoal. It is much more effecient than just burning campfires. To make one, dig a hole and place logs and sticks into it. Next, light the wood on fire and then cover it with the dirt you dug.
 
-- ## World Generation
-  A goal of mine is to have the world have randomly generated terrain. I want rivers to look like actual rivers and to be flowing, so that we can use water to push things. I will look into world generation then update this block once I have a formula.
-  
-  I have written an example file in the file [worldGen.txt](worldGen.txt). It uses Light Noise to decide information such as temperature, altitude, and moisture.
+- ## ~World Generation~ Hand Crafted World
+  I was thinking about making the world randomly generate, but I desided not to for a few reasons.
 
-  I am not a huge fan of the basic procedural generation I have written because it isn't realistic. My new plan to use Perlin noise to define continents useing the pixel values as a hight map. Then I will use another noise map to define rainfall, and then get the latitude of each cell by getting the absolute value of the y coordinate. Along with that I will use another noise map to define the subrate and strata. Using this data I can generate cells in a realistic way. Adding water such as rivers and lakes will be a problem for the future. I think I will use the elevation to define points where water would flow.
+  One reason is that by making the world all by myself I can have the story interact with the terrain rather than the story feeling apart from the actual gameplay
+
+  Another reason is that by hand making the world, I can make the world as pretty as possible, with detail and life in every part of the world, along with each section feeling different.
+
+  One last reason is that Procedural World Generation tends to be very finicky and I would come across many bugs, slowing development.
 
 - ## Inventory System
   The player and all containers have a simaler inventory system. The inventory is a grid, upon which items can be placed. Some items take up multiple grid spaces, whil others just take one. Items will be able to stack in the inventory without taking extra space, but they all have different maximum stack sizes.
