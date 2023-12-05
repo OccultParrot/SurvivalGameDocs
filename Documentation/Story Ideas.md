@@ -13,8 +13,19 @@ Very start of a new save. Mostly a cutscene.
 
 This is the start of the tutorial. This will give access to basic unknapped hand axe, and other EXTREMELY basic tools, items, and structures.
 
-- Player finds the spirits home.
+- Player finds Ravens Grove and meets Raven
 
 This is the end of the tutorial, and gives access to knapping, fibers, and basic rope, Along with the start of the story and quests.
 
 More will be added soon...
+
+## Inspirations
+
+Quite a few things have given me inspiration for this project, and here are a few!
+
+- *Book Series* "Clash of Eagles"
+- *Minecraft Mod* "TerraFirmaCraft" & "TerraFirmaCraft+"
+- *Book Series* "Eight"
+- *Book* "My Side of the Mountian"
+- *Game* "Green Hell"
+- *Game* "The Forest" & "Sons of the Forest"
