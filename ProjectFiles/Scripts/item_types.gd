@@ -6,6 +6,15 @@ class_name ItemTypes
 Item tags:
 	- testing # When an item has the "testing" tag, debug information will be displayed about the item when hovered over
 	- weapon
+	
+An item must have these things in the super._init():
+	name : String
+	description : String
+	tags : Array
+	weight : float
+	max_stack_size : int
+	texture : Texture2D
+	size : Vector2i
 """
 
 class Item:
@@ -39,6 +48,11 @@ class Item:
 
 	func _to_string():
 		return self.Name
+
+class Air extends Item:
+	func _init():
+		super._init("Air", "A gas that I recomend breathing", [], 0.0, 1, null, Vector2i.ZERO)
+
 
 # Define a base class for components
 class Component:

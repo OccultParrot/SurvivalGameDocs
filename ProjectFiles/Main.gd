@@ -5,7 +5,6 @@ func _ready():
 	for x in range($Inventory.size.x * $Inventory.size.y):
 		$ItemList.add_item(str(x), null, true)
 		
-	$Inventory.inv_array[3][3] = ItemTypes.GraniteRock.new()
 
 
 # Called every frame. 'delta' is the elapsedtime since the previous frame.

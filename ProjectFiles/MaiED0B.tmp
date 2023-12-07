@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6wtorsirkncs"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_pqcep"]
+[ext_resource type="PackedScene" uid="uid://d2q86a8al8y7m" path="res://Scenes/inventory.tscn" id="2_gmevb"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_pqcep")
+
+[node name="Inventory" parent="." instance=ExtResource("2_gmevb")]
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 674.0
+offset_bottom = 319.0
+allow_reselect = true
+max_columns = 2
+same_column_width = true
+
+[connection signal="item_clicked" from="ItemList" to="." method="_on_item_list_item_clicked"]
