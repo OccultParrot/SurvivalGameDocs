@@ -72,3 +72,12 @@ class Damage extends Component:
 	
 	func _init(damage_value : int):
 		self.damage_value = damage_value
+
+# Durability component for items
+class Durability extends Component:
+	var durability : int
+	var max_durability : int
+
+	func _init(starting_durability : int):
+		var durability = starting_durability
+		var max_durability = starting_durability
