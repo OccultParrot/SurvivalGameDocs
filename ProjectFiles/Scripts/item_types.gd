@@ -46,6 +46,7 @@ class Item:
 	func add_component(component):
 		self.components.append(component)
 
+	# When you get the class as a string, it returns the name of the item.
 	func _to_string():
 		return self.Name
 
