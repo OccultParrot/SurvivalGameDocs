@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6wtorsirkncs"]
+[gd_scene load_steps=4 format=3 uid="uid://c6wtorsirkncs"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_pqcep"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5kr7"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_crgdd"]
+material = SubResource("StandardMaterial3D_q5kr7")
+size = Vector2(60, 60)
+
 [node name="Main" type="Node"]
 script = ExtResource("1_pqcep")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 1, 5.57973, 5.90392)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_crgdd")

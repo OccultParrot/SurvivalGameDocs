@@ -1,11 +1,16 @@
 extends Node
-# Called when the node enters the scene tree for the first time.
-var inv = Inventory.GridInventory.new(5,5)
 
-func _ready():
-	var item = ItemTypes.BasaltStone.new()
-	inv.place_item(item, Vector2(1,1), item.Size, false)
+@export var speed : float = 1
+var direction : Vector3
 
-# Called every frame. 'delta' is the elapsedtime since the previous frame.
 func _process(delta):
-	pass
+	direction = Vector3(0.0,0.0,0.0)
+	if Input.is_action_pressed("move_up"):
+		direction.y += 1
+	if Input.is_action_pressed("move_down"):
+		direction.y -= 1
+	if Input.is_action_pressed("move_right"):
+		direction.x += 1
+	if Input.is_action_pressed("move_left"):
+		direction.x -= 1
+	$Camera3D.position += (direction.normalized() * speed) * delta
