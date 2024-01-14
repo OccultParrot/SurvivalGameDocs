@@ -1,18 +1,43 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6wtorsirkncs"]
+[gd_scene load_steps=7 format=3 uid="uid://c6wtorsirkncs"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_pqcep"]
+[ext_resource type="Shader" path="res://Shaders/pixelization1.gdshader" id="2_ovbpb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5kr7"]
+albedo_color = Color(0, 0.392157, 0, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_crgdd"]
 material = SubResource("StandardMaterial3D_q5kr7")
 size = Vector2(60, 60)
 
+[sub_resource type="BoxMesh" id="BoxMesh_tuax5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sdvby"]
+shader = ExtResource("2_ovbpb")
+shader_parameter/pixelSize = 16
+
 [node name="Main" type="Node"]
 script = ExtResource("1_pqcep")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 1, 5.57973, 5.90392)
+[node name="Scenery" type="Node3D" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Floor" type="MeshInstance3D" parent="Scenery"]
 mesh = SubResource("PlaneMesh_crgdd")
+skeleton = NodePath("../..")
+
+[node name="Square" type="MeshInstance3D" parent="Scenery"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 12)
+mesh = SubResource("BoxMesh_tuax5")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0593367, 2.47819, 14.4612)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_sdvby")
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.846992, 0.531606, 0, -0.531606, 0.846992, 0, 12.541, 27.2927)
